@@ -1,10 +1,3 @@
 /**/__pycache__/
 /**/.idea/
-staticfiles/
-.DS_Store
-.env
-*.bak.enc
-db.sqlite3
-venv/
-data.sqld/
-web/data/
+/**/db.sqlite3

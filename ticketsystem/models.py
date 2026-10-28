@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 # Create your models here.
 
 
@@ -6,7 +7,6 @@ class Hall(models.Model):
 	name = models.CharField(max_length=200)
 	seats = models.JSONField()
 	seatPlan = models.JSONField()
-	price_schema = models.TextField(blank=True, default='', help_text='Örn: a-f:75,g-k:60,l-z:50 (Mimarlık gibi tek fiyatlı salon: 60)')
 
 	def __str__(self):
 		return self.name
